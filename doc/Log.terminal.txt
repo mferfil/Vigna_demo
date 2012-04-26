@@ -1,0 +1,1000 @@
+  -j, [--javascript=JAVASCRIPT]  # Preconfigure for selected JavaScript library
+                                 # Default: jquery
+  -J, [--skip-javascript]        # Skip JavaScript files
+      [--dev]                    # Setup the application with Gemfile pointing t
+      [--edge]                   # Setup the application with Gemfile pointing t
+  -T, [--skip-test-unit]         # Skip Test::Unit files
+      [--old-style-hash]         # Force using old style hash (:foo => 'bar') on
+
+Runtime options:
+  -f, [--force]    # Overwrite files that already exist
+  -p, [--pretend]  # Run but do not make any changes
+  -q, [--quiet]    # Supress status output
+  -s, [--skip]     # Skip files that already exist
+
+Rails options:
+  -h, [--help]     # Show this help message and quit
+  -v, [--version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+    See the README in the newly created application to get going.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev 
+$ rails new Vigna -d
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev 
+$ rails new Vigna_demo -d postgresql
+      create
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/images/rails.png
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/mailers
+      create  app/models
+      create  app/views/layouts/application.html.erb
+      create  app/mailers/.gitkeep
+      create  app/models/.gitkeep
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/secret_token.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  doc
+      create  doc/README_FOR_APP
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.gitkeep
+      create  lib/assets
+      create  lib/assets/.gitkeep
+      create  log
+      create  log/.gitkeep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/index.html
+      create  public/robots.txt
+      create  script
+      create  script/rails
+      create  test/fixtures
+      create  test/fixtures/.gitkeep
+      create  test/functional
+      create  test/functional/.gitkeep
+      create  test/integration
+      create  test/integration/.gitkeep
+      create  test/unit
+      create  test/unit/.gitkeep
+      create  test/performance/browsing_test.rb
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.gitkeep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.gitkeep
+      create  vendor/plugins
+      create  vendor/plugins/.gitkeep
+         run  bundle install
+Fetching source index for https://rubygems.org/
+Using rake (0.9.2.2)
+Using i18n (0.6.0)
+Using multi_json (1.1.0)
+Using activesupport (3.2.2)
+Using builder (3.0.0)
+Using activemodel (3.2.2)
+Using erubis (2.7.0)
+Using journey (1.0.3)
+Using rack (1.4.1)
+Using rack-cache (1.2)
+Using rack-test (0.6.1)
+Using hike (1.2.1)
+Using tilt (1.3.3)
+Using sprockets (2.1.2)
+Using actionpack (3.2.2)
+Using mime-types (1.17.2)
+Using polyglot (0.3.3)
+Using treetop (1.4.10)
+Installing mail (2.4.4)
+Using actionmailer (3.2.2)
+Using arel (3.0.2)
+Using tzinfo (0.3.32)
+Using activerecord (3.2.2)
+Using activeresource (3.2.2)
+Using bundler (1.0.21)
+Using coffee-script-source (1.2.0)
+Using execjs (1.3.0)
+Using coffee-script (2.2.0)
+Using rack-ssl (1.3.2)
+Using json (1.6.5)
+Using rdoc (3.12)
+Using thor (0.14.6)
+Using railties (3.2.2)
+Installing coffee-rails (3.2.2)
+Installing jquery-rails (2.0.1)
+Installing pg (0.13.2)
+Using rails (3.2.2)
+Using sass (3.1.15)
+Installing sass-rails (3.2.5)
+Using uglifier (1.2.3)
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev 
+$ rake db:create:all
+sh.exe": /c/RailsInstaller/Ruby1.9.2/bin/rake: C:/Projects/railsinstaller/stage/Ruby1.9.2/bin/ruby.exe: bad interpreter: No such file or directory
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev 
+$ cd Vigna_demo/
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:create:all
+sh.exe": /c/RailsInstaller/Ruby1.9.2/bin/rake: C:/Projects/railsinstaller/stage/Ruby1.9.2/bin/ruby.exe: bad interpreter: No such file or directory
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ ls
+Gemfile  Gemfile.lock  README.rdoc  Rakefile  app  config  config.ru  db  doc  lib  log  public  script  test  tmp  vendor
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ bundle show
+sh.exe": /c/RailsInstaller/Ruby1.9.2/bin/bundle: C:/Projects/railsinstaller/stage/Ruby1.9.2/bin/ruby.exe: bad interpreter: No such file or directory
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ gem install pg
+Successfully installed pg-0.13.2-x86-mingw32
+1 gem installed
+Installing ri documentation for pg-0.13.2-x86-mingw32...
+Installing RDoc documentation for pg-0.13.2-x86-mingw32...
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ bundle show
+sh.exe": /c/RailsInstaller/Ruby1.9.2/bin/bundle: C:/Projects/railsinstaller/stage/Ruby1.9.2/bin/ruby.exe: bad interpreter: No such file or directory
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ bundle install
+sh.exe": /c/RailsInstaller/Ruby1.9.2/bin/bundle: C:/Projects/railsinstaller/stage/Ruby1.9.2/bin/ruby.exe: bad interpreter: No such file or directory
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ gem install rake
+Successfully installed rake-0.9.2.2
+1 gem installed
+Installing ri documentation for rake-0.9.2.2...
+Installing RDoc documentation for rake-0.9.2.2...
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:create:all
+fe_sendauth: no password supplied
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ut'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrie
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:107:in `rescue in create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:51:in `create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (5 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:143:in `local_database?'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (4 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `each_value'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `block (3 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `block in execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:in `block in invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:in `invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:in `invoke'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:116:in `invoke_task'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block (2 levels) in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:88:in `top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:66:in `block in run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:63:in `run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in `<top (required)>'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"Vigna_demo_development", "pool"=>5, "username"=>"Vigna_demo", "passwor
+d"=>nil}
+fe_sendauth: no password supplied
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ut'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrie
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:107:in `rescue in create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:51:in `create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (5 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:143:in `local_database?'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (4 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `each_value'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `block (3 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `block in execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:in `block in invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:in `invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:in `invoke'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:116:in `invoke_task'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block (2 levels) in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:88:in `top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:66:in `block in run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:63:in `run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in `<top (required)>'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"Vigna_demo_test", "pool"=>5, "username"=>"Vigna_demo", "password"=>nil
+}
+fe_sendauth: no password supplied
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_reco
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in `<top
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "database
+"=>"1q2w3e4r"}
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ ruby --v
+c:\RailsInstaller\Ruby1.9.2\bin\ruby.exe: invalid option --v  (-h will show valid optio
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ ruby -v
+ruby 1.9.2p290 (2011-07-09) [i386-mingw32]
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:create:all
+FATAL:  role "Vigna_demo" nÒo existe
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ut'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrie
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:107:in `rescue in create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:51:in `create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (5 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:143:in `local_database?'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (4 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `each_value'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `block (3 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `block in execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:in `block in invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:in `invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:in `invoke'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:116:in `invoke_task'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block (2 levels) in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:88:in `top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:66:in `block in run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:63:in `run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in `<top (required)>'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"Vigna_demo_development", "pool"=>5, "username"=>"Vigna_demo", "passwor
+d"=>"1q2w3e4r", "host"=>"localhost", "port"=>5432}
+FATAL:  role "Vigna_demo" nÒo existe
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ut'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrie
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:107:in `rescue in create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:51:in `create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (5 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:143:in `local_database?'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (4 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `each_value'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `block (3 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `block in execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:in `block in invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:in `invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:in `invoke'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:116:in `invoke_task'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block (2 levels) in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:88:in `top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:66:in `block in run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:63:in `run'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in `<top (required)>'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"Vigna_demo_test", "pool"=>5, "username"=>"Vigna_demo", "password"=>"1q
+2w3e4r"}
+FATAL:  role "Vigna_demo" nÒo existe
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_co
+nnection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels
+) in checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checko
+ut'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrie
+ve_connection'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connec
+tion'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:107:in `rescue in create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:51:in `create_database'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (5 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:143:in `local_database?'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:33:in `block (4 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `each_value'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/activerecord-3.2.2/lib/active_record/railties/databases.rake:19:in `block (3 levels) in <top (required)>'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:205:in `block in execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:200:in `execute'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:158:in `block in invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:151:in `invoke_with_call_chain'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/task.rb:144:in `invoke'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:116:in `invoke_task'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block (2 levels) in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `each'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:94:in `block in top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:133:in `standard_exception_handling'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/application.rb:88:in `top_level'
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/appli
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/appli
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/lib/rake/appli
+c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2/bin/rake:33:in
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `load'
+c:/RailsInstaller/Ruby1.9.2/bin/rake:19:in `<main>'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "d
+"=>"1q2w3e4r"}
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rake db:create:all
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rake -t
+** Invoke default (first_time)
+** Invoke test (first_time)
+** Execute test
+** Invoke test:run (first_time)
+** Execute test:run
+** Invoke test:units (first_time)
+** Invoke test:prepare (first_time)
+** Invoke db:test:prepare (first_time)
+** Invoke db:abort_if_pending_migrations (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:abort_if_pending_migrations
+** Execute db:test:prepare
+** Invoke db:test:load (first_time)
+** Invoke db:test:purge (first_time)
+** Invoke environment
+** Execute db:test:purge
+** Execute db:test:load
+** Invoke db:test:load_schema (first_time)
+** Invoke db:test:purge
+** Execute db:test:load_schema
+** Invoke db:schema:load (first_time)
+** Invoke environment
+** Execute db:schema:load
+c:/Users/Marcel Feres/Dropbox/Coiko/!WIP/Webdev/Vigna_demo/db/schema.rb doesn't
+d to use a database, you should instead alter c:/Users/Marcel Feres/Dropbox/Coik
+be loaded
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rake -?
+invalid option: -?
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake ? 
+rake aborted!
+Don't know how to build task '?'
+
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake --?
+invalid option: --?
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake --h
+rake [-f rakefile] {options} targets...
+
+Options are ...
+    -C, --classic-namespace          Put Task and FileTask in the top level namespace
+    -D, --describe [PATTERN]         Describe the tasks (matching optional PATTERN), the
+n exit.
+    -n, --dry-run                    Do a dry run without executing actions.
+    -e, --execute CODE               Execute some Ruby code and exit.
+    -p, --execute-print CODE         Execute some Ruby code, print the result, then exit
+.
+    -E, --execute-continue CODE      Execute some Ruby code, then continue with normal t
+ask processing.
+    -I, --libdir LIBDIR              Include LIBDIR in the search path for required modu
+les.
+    -N, --no-search, --nosearch      Do not search parent directories for the Rakefile.
+    -P, --prereqs                    Display the tasks and dependencies, then exit.
+    -q, --quiet                      Do not log messages to standard output.
+    -f, --rakefile [FILE]            Use FILE as the rakefile.
+    -R, --rakelibdir RAKELIBDIR,     Auto-import any .rake files in RAKELIBDIR. (default
+ is 'rakelib')
+        --rakelib
+    -r, --require MODULE             Require MODULE before executing rakefile.
+        --rules                      Trace the rules resolution.
+    -s, --silent                     Like --quiet, but also suppresses the 'in directory
+' announcement.
+    -g, --system                     Using system wide (global) rakefiles (usually '~/.r
+ake/*.rake').
+    -G, --no-system, --nosystem      Use standard project Rakefile search paths, ignore
+system wide rakefiles.
+    -T, --tasks [PATTERN]            Display the tasks (matching optional PATTERN) with
+descriptions, then exit.
+    -t, --trace                      Turn on invoke/execute tracing, enable full backtra
+ce.
+    -v, --verbose                    Log message to standard output.
+    -V, --version                    Display the program version.
+    -W, --where [PATTERN]            Describe the tasks (matching optional PATTERN), the
+n exit.
+    -X, --no-deprecation-warnings    Disable the deprecation warnings.
+    -h, -H, --help                   Display this help message.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rake -T
+rake about              # List versions of all Rails frameworks and the env...
+rake assets:clean       # Remove compiled assets
+rake assets:precompile  # Compile all the assets named in config.assets.pre...
+rake db:create          # Create the database from config/database.yml for ...
+rake db:drop            # Drops the database for the current Rails.env (use...
+rake db:fixtures:load   # Load fixtures into the current environment's data...
+rake db:migrate         # Migrate the database (options: VERSION=x, VERBOSE...
+rake db:migrate:status  # Display status of migrations
+rake db:rollback        # Rolls the schema back to the previous version (sp...
+rake db:schema:dump     # Create a db/schema.rb file that can be portably u...
+rake db:schema:load     # Load a schema.rb file into the database
+rake db:seed            # Load the seed data from db/seeds.rb
+rake db:setup           # Create the database, load the schema, and initial...
+rake db:structure:dump  # Dump the database structure to db/structure.sql. ...
+rake db:version         # Retrieves the current schema version number
+rake doc:app            # Generate docs for the app -- also available doc:r...
+rake log:clear          # Truncates all *.log files in log/ to zero bytes
+rake middleware         # Prints out your Rack middleware stack
+rake notes              # Enumerate all annotations (use notes:optimize, :f...
+rake notes:custom       # Enumerate a custom annotation, specify with ANNOT...
+rake rails:template     # Applies the template supplied by LOCATION=(/path/...
+rake rails:update       # Update configs and some other initially generated...
+rake routes             # Print out all defined routes in match order, with...
+rake secret             # Generate a cryptographically secure secret key (t...
+rake stats              # Report code statistics (KLOCs, etc) from the appl...
+rake test               # Runs test:units, test:functionals, test:integrati...
+rake test:recent        # Run tests for {:recent=>"test:prepare"} / Test re...
+rake test:single        # Run tests for {:single=>"test:prepare"}
+rake test:uncommitted   # Run tests for {:uncommitted=>"test:prepare"} / Te...
+rake time:zones:all     # Displays all time zones, also available: time:zon...
+rake tmp:clear          # Clear session, cache, and socket files from tmp/ ...
+rake tmp:create         # Creates tmp directories for sessions, cache, sock...
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rails generate model escritorio
+      invoke  active_record
+      create    db/migrate/20120321060659_create_escritorios.rb
+      create    app/models/escritorio.rb
+      invoke    test_unit
+      create      test/unit/escritorio_test.rb
+      create      test/fixtures/escritorios.yml
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rake db:migrate
+==  CreateEscritorios: migrating ==============================================
+-- create_table(:escritorios)
+-- add_column(:escritorios, :produtos, :string, {:limit=>40})
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+PG::Error: ERRO:  rela├º├úo "escritorios" n├úo existe
+: ALTER TABLE "escritorios" ADD COLUMN "produtos" character varying(40)
+
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo 
+$ rails generate migration add_column_produto_escritorios
+      invoke  active_record
+      create    db/migrate/20120321063833_add_column_produto_escritorios.rb
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:migrate
+==  CreateEscritorios: migrating ==============================================
+-- create_table(:escritorios)
+NOTA:  CREATE TABLE criar├í sequ├¬ncia impl├¡cita "escritorios_id_seq" para coluna seria
+l "escritorios.id"
+NOTA:  CREATE TABLE / PRIMARY KEY criar├í ├¡ndice impl├¡cito "escritorios_pkey" na tabel
+a "escritorios"
+   -> 0.0480s
+==  CreateEscritorios: migrated (0.0490s) =====================================
+
+==  AddColumnProdutoEscritorios: migrating ====================================
+-- add_column(:escritorios, :produtos, :string, {:limit=>100})
+   -> 0.0020s
+==  AddColumnProdutoEscritorios: migrated (0.0020s) ===========================
+
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails console        
+Loading development environment (Rails 3.2.2)
+irb(main):001:0> esc = Escritorios.new :nome => "Vigna Brasil - PMO",     
+irb(main):002:0*
+Display all 468 possibilities? (y or n)
+irb(main):002:0* :endereco => "Rua 13 de maio, 1816",
+<"Escritorio de desenvolvimento de projetos do Grupo Vigna"
+NameError: uninitialized constant Escritorios
+        from (irb):1
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands/console.rb:47:in `start'
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands/console.rb:8:in `start'
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands.rb:41:in `<top (required)>'
+        from script/rails:6:in `require'
+        from script/rails:6:in `<main>'
+irb(main):004:0> esc.save
+NoMethodError: undefined method `save' for nil:NilClass
+        from (irb):4
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands/console.rb:47:in `start'
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands/console.rb:8:in `start'
+        from c:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/railties-3.2.2
+ls/commands.rb:41:in `<top (required)>'
+        from script/rails:6:in `require'
+        from script/rails:6:in `<main>'
+irb(main):005:0> Escritorio.create :nome => "Vigna Brasil - PMO"
+  ←[1m←[36m (0.0ms)←[0m  ←[1mBEGIN←[0m
+  ←[1m←[35mSQL (169.0ms)←[0m  INSERT INTO "escritorios" ("created_at", "endereco
+", "produtos", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["crea
+ Wed, 21 Mar 2012 07:05:55 UTC +00:00], ["endereco", nil], ["nome", "Vigna Brasi
+], ["produtos", nil], ["updated_at", Wed, 21 Mar 2012 07:05:55 UTC +00:00]]
+  ←[1m←[36m (1.0ms)←[0m  ←[1mCOMMIT←[0m
+=> #<Escritorio id: 1, nome: "Vigna Brasil - PMO", endereco: nil, created_at: "2
+1 07:05:55", updated_at: "2012-03-21 07:05:55", produtos: nil>
+<13 de maio, 1816", :produto => "Escritorio de projetos da Vigna"
+<aio, 1816", :produto => "Escritorio de projetos da Vigna"})
+irb(main):008:2> Escritorio.update(1, {:endereco => "Rua 13 de maio, 1816", :pro
+irb(main):009:2> Escritorio.update(1, {:endereco => "Rua 13 de maio, 1816" })
+< 13 de maio, 1816", :produtos => "Escritorio de projetos da Vigna"})
+irb(main):011:2> Escritorio.update(1, {:endereco => "Rua 13 de maio, 1816" })
+irb(main):012:2> Escritorio.update (1, {:endereco => "Rua 13 de maio, 1816" })
+irb(main):013:2> Escritorio.destroy 
+irb(main):014:2> rails generate --h
+irb(main):015:2> rails generate    
+irb(main):016:2> ^C
+irb(main):016:0>
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails generate --h
+Could not find generator --h.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails generate    
+Usage: rails generate GENERATOR [args] [options]
+
+General options:
+  -h, [--help]     # Print generator's options and usage
+  -p, [--pretend]  # Run but do not make any changes
+  -f, [--force]    # Overwrite files that already exist
+  -s, [--skip]     # Skip files that already exist
+  -q, [--quiet]    # Suppress status output
+
+Please choose a generator below.
+
+Rails:
+  assets
+  controller
+  generator
+  helper
+  integration_test
+  mailer
+  migration
+  model
+  observer
+  performance_test
+  resource
+  scaffold
+  scaffold_controller
+  session_migration
+  task
+
+Coffee:
+  coffee:assets
+
+Jquery:
+  jquery:install
+
+Js:
+  js:assets
+
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails generate model -h
+Usage:
+  rails generate model NAME [field[:type][:index] field[:type][:index]] [options
+]
+
+Options:
+      [--skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--old-style-hash]  # Force using old style hash (:foo => 'bar') on Ruby >
+= 1.9
+  -o, --orm=NAME          # Orm to be invoked
+                          # Default: active_record
+
+ActiveRecord options:
+      [--migration]            # Indicates when to generate migration
+                               # Default: true
+      [--timestamps]           # Indicates when to generate timestamps
+                               # Default: true
+      [--parent=PARENT]        # The parent class for the generated model
+      [--indexes]              # Add indexes for references and belongs_to colum
+ns
+                               # Default: true
+  -t, [--test-framework=NAME]  # Test framework to be invoked
+                               # Default: test_unit
+
+TestUnit options:
+      [--fixture]                   # Indicates when to generate fixture
+                                    # Default: true
+  -r, [--fixture-replacement=NAME]  # Fixture replacement to be invoked
+
+Runtime options:
+  -f, [--force]    # Overwrite files that already exist
+  -p, [--pretend]  # Run but do not make any changes
+  -q, [--quiet]    # Supress status output
+  -s, [--skip]     # Skip files that already exist
+
+Description:
+    Create rails files for model generator.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails destroy model escritorio
+      invoke  active_record
+      remove    db/migrate/20120321060659_create_escritorios.rb
+      remove    app/models/escritorio.rb
+      invoke    test_unit
+      remove      test/unit/escritorio_test.rb
+      remove      test/fixtures/escritorios.yml
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails generate model escritorio 
+      invoke  active_record
+      create    db/migrate/20120321074302_create_escritorios.rb
+      create    app/models/escritorio.rb
+      invoke    test_unit
+      create      test/unit/escritorio_test.rb
+      create      test/fixtures/escritorios.yml
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:migrate
+==  CreateEscritorios: migrating ==============================================
+-- create_table(:escritorios)
+NOTA:  CREATE TABLE criar├í sequ├¬ncia impl├¡cita "escritorios_id_seq1" para col
+una serial "escritorios.id"
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+PG::Error: ERRO:  rela├º├úo "escritorios" j├í existe
+: CREATE TABLE "escritorios" ("id" serial primary key, "nome" character varying(
+80), "endereco" character varying(160), "created_at" timestamp NOT NULL, "update
+d_at" timestamp NOT NULL)
+
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:drop escritorios
+Couldn't drop Vigna_demo_development : #<ActiveRecord::StatementInvalid: PG::Err
+or: ERRO:  banco de dados "Vigna_demo_development" est├í sendo acessado por outr
+os usu├írios
+DETAIL:  H├í 2 outra(s) sess├úo(├Áes) utilizando o banco de dados.
+: DROP DATABASE IF EXISTS "Vigna_demo_development">
+rake aborted!
+Don't know how to build task 'escritorios'
+
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:drop escritorios
+Couldn't drop Vigna_demo_development : #<ActiveRecord::StatementInvalid: PG::Err
+or: ERRO:  banco de dados "Vigna_demo_development" est├í sendo acessado por outr
+os usu├írios
+DETAIL:  H├í 2 outra(s) sess├úo(├Áes) utilizando o banco de dados.
+: DROP DATABASE IF EXISTS "Vigna_demo_development">
+NOTA:  banco de dados "Vigna_demo_test" n├úo existe, ignorando
+rake aborted!
+Don't know how to build task 'escritorios'
+
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:drop --help
+rake [-f rakefile] {options} targets...
+
+Options are ...
+    -C, --classic-namespace          Put Task and FileTask in the top level name
+space
+    -D, --describe [PATTERN]         Describe the tasks (matching optional PATTE
+RN), then exit.
+    -n, --dry-run                    Do a dry run without executing actions.
+    -e, --execute CODE               Execute some Ruby code and exit.
+    -p, --execute-print CODE         Execute some Ruby code, print the result, t
+hen exit.
+    -E, --execute-continue CODE      Execute some Ruby code, then continue with
+normal task processing.
+    -I, --libdir LIBDIR              Include LIBDIR in the search path for requi
+red modules.
+    -N, --no-search, --nosearch      Do not search parent directories for the Ra
+kefile.
+    -P, --prereqs                    Display the tasks and dependencies, then ex
+it.
+    -q, --quiet                      Do not log messages to standard output.
+    -f, --rakefile [FILE]            Use FILE as the rakefile.
+    -R, --rakelibdir RAKELIBDIR,     Auto-import any .rake files in RAKELIBDIR.
+(default is 'rakelib')
+        --rakelib
+    -r, --require MODULE             Require MODULE before executing rakefile.
+        --rules                      Trace the rules resolution.
+    -s, --silent                     Like --quiet, but also suppresses the 'in d
+irectory' announcement.
+    -g, --system                     Using system wide (global) rakefiles (usual
+ly '~/.rake/*.rake').
+    -G, --no-system, --nosystem      Use standard project Rakefile search paths,
+ ignore system wide rakefiles.
+    -T, --tasks [PATTERN]            Display the tasks (matching optional PATTER
+N) with descriptions, then exit.
+    -t, --trace                      Turn on invoke/execute tracing, enable full
+ backtrace.
+    -v, --verbose                    Log message to standard output.
+    -V, --version                    Display the program version.
+    -W, --where [PATTERN]            Describe the tasks (matching optional PATTE
+RN), then exit.
+    -X, --no-deprecation-warnings    Disable the deprecation warnings.
+    -h, -H, --help                   Display this help message.
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rake db:migrate:redo
+==  AddColumnProdutoEscritorios: reverting ====================================
+-- remove_column(:escritorios, :produtos)
+   -> 0.0010s
+==  AddColumnProdutoEscritorios: reverted (0.0030s) ===========================
+
+==  AddColumnProdutoEscritorios: migrating ====================================
+-- add_column(:escritorios, :produtos, :string, {:limit=>100})
+   -> 0.0020s
+==  AddColumnProdutoEscritorios: migrated (0.0020s) ===========================
+
+==  CreateEscritorios: migrating ==============================================
+-- create_table(:escritorios)
+NOTA:  CREATE TABLE criar├í sequ├¬ncia impl├¡cita "escritorios_id_seq1" para col
+una serial "escritorios.id"
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+PG::Error: ERRO:  rela├º├úo "escritorios" j├í existe
+: CREATE TABLE "escritorios" ("id" serial primary key, "nome" character varying(
+80), "endereco" character varying(160), "created_at" timestamp NOT NULL, "update
+d_at" timestamp NOT NULL)
+
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ rails console           
+e = es           Loading development environment (Rails 3.2.2)
+irb(main):016:0> [~~^C[e=[[~[6~[6~~~~~~~
+
+irb(main):016:0>
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ ^C
+$ rails console
+Loading development environment (Rails 3.2.2)
+irb(main):001:0> [3 ^C3[3[3
+irb(main):016:0> ^C
+^C
+
+irb(main):001:0> irb(main):001:0>
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$ ^C
+
+irb(main):001:0> ^C
+^C
+irb(main):001:0> irb(main):016:0>
+Marcel Feres@MARCELFERES-PC ~/Dropbox/Coiko/!WIP/Webdev/Vigna_demo
+$

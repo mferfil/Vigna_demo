@@ -1,0 +1,5 @@
+class Projeto < ActiveRecord::Base
+  belongs_to :cliente
+# Colaborador = responsável/gerente do projeto
+  belongs_to :colaborador
+end

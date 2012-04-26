@@ -1,0 +1,6 @@
+def self.up
+	add_column :escritorios, :nome_da_nova_coluna, :string, :limit => 40
+end
+def self.down
+	remove_column :escritorios, :nome_da_nova_coluna
+end

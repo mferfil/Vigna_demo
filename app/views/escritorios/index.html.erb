@@ -1,0 +1,32 @@
+# Inserir menu Vigna c/ logotipo e links (Usar Partials)
+<h1>Grupo Vigna Brasil</h1>
+
+<h2>Listagem de Escritorios</h2>
+
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Endereço</th>
+		<th>Cidade - UF</th>
+		<th>Pais</th>
+		<th>Telefone</th>
+		<th>Colaboradores</th>
+	</tr>
+	
+<% @escritorios.each do |escritorio| %>	
+	<tr>
+		<td><%= escritorio.nome %></td>
+		<td><%= escritorio.endereco %></td>
+		<td><%= escritorio.cidade_uf %></td>
+		<td><%= escritorio.pais %></td>
+		<td><%= escritorio.telefone %></td>
+		<td><%= escritorio.colaborador %></td>
+		<td><%= link_to 'Mostrar', { :action => 'show', :id => escritorio }%></td>
+		<td><%= link_to 'Editar', { :action => 'edit', :id => escritorio }%></td>
+		<td><%= link_to 'Deletar', { :action => 'destroy', :id => escritorio }%></td>
+	</tr>
+<% end %>
+</table>
+
+<br/>
+<h1><%= link_to 'Novo', { :action => 'new' } %></h1>

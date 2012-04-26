@@ -1,0 +1,9 @@
+class Colaborador < ActiveRecord::Base
+  validates_presence_of :nome
+  validates_presence_of :sobrenome 
+  validates_presence_of :escritorio_id
+  validates_presence_of :vinculo
+  has_and_belongs_to_many :projetos
+  has_and_belongs_to_many :propostas
+  has_and_belongs_to_many :escritorios
+end

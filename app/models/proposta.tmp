@@ -1,0 +1,5 @@
+projeto.rbclass Proposta < ActiveRecord::Base
+  validates_presence_of :nome
+  validates_presence_of :data
+  belongs_to :cliente
+end
